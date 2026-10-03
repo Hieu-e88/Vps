@@ -14,4 +14,4 @@ jobs:
 
     - name: Chay VPS voi Pinggy
       run: |
-        ssh -p 443 -R 0:localhost:3389 -o StrictHostKeyChecking=no -o ServerAliveInterval=30 a.pinggy.io
+        ssh -T -p 443 -R 0:localhost:3389 -o StrictHostKeyChecking=no -o ServerAliveInterval=30 tcp@free.pinggy.io
