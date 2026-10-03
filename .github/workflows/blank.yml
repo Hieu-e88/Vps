@@ -12,6 +12,6 @@ jobs:
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         net user runneradmin MatKhau123456@
 
-    - name: Chay VPS voi Pinggy
+    - name: Chay VPS voi Serveo
       run: |
-        ssh -T -p 443 -R 0:localhost:3389 -o StrictHostKeyChecking=no -o ServerAliveInterval=30 tcp@free.pinggy.io
+        ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -R 0:localhost:3389 serveo.net
